@@ -17,6 +17,10 @@ filename = "teacher.html"
 with open(filename, 'w', encoding='utf-8') as f:    
    f.write(response.body.decode())
 ```
-这里需要注意几点：
-* open 一定要加上 encoding='utf-8'，否则在 f.write 的时候会报错。
-* response.body 返回的是 bytes，需要将其 decode 成 string。
+这里需要注意几点：<br>
+* open 一定要加上 encoding='utf-8'，否则在 f.write 的时候会报错。<br>
+* response.body 返回的是 bytes，需要将其 decode 成 string。<br>
+
+3.github中readme的编写<br>
+-------
+参考：https://blog.csdn.net/guodongxiaren/article/details/23690801<br>
