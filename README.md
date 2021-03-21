@@ -2,7 +2,7 @@
 ============
 记录下爬虫所用的程序和遇到的问题，以及解决的方法，方便日后使用<br>
 
-1.程序<br>
+一.程序<br>
 ------
 
 #### 1.request、bs4方法<br>
@@ -11,7 +11,7 @@ https://www.jianshu.com/p/9c266216957b<br>https://zhuanlan.zhihu.com/p/111123472
 #### 2.scrapy方法<br>
 参考：https://www.runoob.com/w3cnote/scrapy-detail.html
 
-2.问题<br>
+二.问题<br>
 ------
 
 #### 1.关于Python3在保存抓取文件时候遇到的格式问题，解决代码如下：<br>
@@ -24,6 +24,6 @@ with open(filename, 'w', encoding='utf-8') as f:
 * open 一定要加上 encoding='utf-8'，否则在 f.write 的时候会报错。<br>
 * response.body 返回的是 bytes，需要将其 decode 成 string。<br>
 
-3.github中readme的编写<br>
+三.github中readme的编写<br>
 -------
 参考：https://blog.csdn.net/guodongxiaren/article/details/23690801<br>
