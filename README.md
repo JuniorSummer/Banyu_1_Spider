@@ -11,7 +11,7 @@ https://www.jianshu.com/p/9c266216957b<br>https://zhuanlan.zhihu.com/p/111123472
 2.问题<br>
 ------
 
-* 关于Python3在保存抓取文件时候遇到的格式问题，解决代码如下：<br>
+1.关于Python3在保存抓取文件时候遇到的格式问题，解决代码如下：<br>
 ```python
 filename = "teacher.html"
 with open(filename, 'w', encoding='utf-8') as f:    
