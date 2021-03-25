@@ -25,9 +25,13 @@ with open(filename, 'w', encoding='utf-8') as f:
 * open 一定要加上 encoding='utf-8'，否则在 f.write 的时候会报错。<br>
 * response.body 返回的是 bytes，需要将其 decode 成 string。<br>
 
-#### 2.关于正则表达式中标点符号的问题：<br><br>
+#### 2.关于正则表达式中标点符号的问题：<br>
 正则表达式中标点符号基本就是用自己原本的符号来表示，不用进行转义。<br>
 其中需要注意的是 . 这个符号，在正则表达式中它表示所有字符，所以英语句号就要考虑非常多的情况（蛮复杂的），可以参考：https://bbs.csdn.net/topics/390737228<br>
+
+#### 3.利用正则表达式去掉乱码字符/提取字符串中的中文字符/提取字符串中的大小写字母：<br>
+https://blog.csdn.net/weixin_40683253/article/details/89637064<br>
+但有个问题，提取出来的英文字符都在一块，还需要额外分词，所以这种方式感觉更适合中文。<br>
 
 三.github中readme的编写<br>
 -------
